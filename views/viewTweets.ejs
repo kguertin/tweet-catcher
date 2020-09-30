@@ -1,0 +1,26 @@
+<%- include('includes/head.ejs') %>
+<div class="top-container">
+    <%- include('includes/nav.ejs') %>
+    <div class="addCategories">
+        <h2 class="search-header">Add Category</h2>
+        <input class="form-control" id="add-category-value" type="text" placeholder="Enter a category." required>
+        <div class="select-all-group">
+            <input class="form-check-input select-all-check" name="select-all-check" id="select-all-tweets" type="checkbox">
+            <label class="form-check-label select-all-label" for="select-all-check">Select All</label>
+        </div>
+        <button class="btn btn-main form-control" id="add-category-btn">Add Category</button>
+        <div id="success-msg" class="hide">
+            <p>Tweets added to collection</p>
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <%- include('includes/construct-tweets.ejs') %>
+    </div>
+
+<script sync src="https://platform.twitter.com/widgets.js"></script>
+<Script>
+let tweetIds = '<%= tweetIDs %>'
+</Script>
+
+<%- include('includes/foot.ejs') %>

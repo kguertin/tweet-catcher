@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f1faee;
+    font-family: 'Roboto',
+}
+
+nav {
+    background: #1d3557;
+    height: 3.5rem
+}
+
+.btn-main{
+    background-color: #e63946;
+    color: #1d3557;
+    margin: 1rem auto;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    padding-top:.75rem
+}
+
+.nav-items .nav-item {
+    list-style: none;
+    margin: 0 .75rem;
+    color: #f1faee;
+    font-size: 1.3rem;
+}
+
+.nav-items .nav-item a{
+    color: #f1faee;
+    text-decoration: none
+}
+
+.select-section{
+    display: flex;
+}
+
+.top-container {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #f1faee;
+}
+
+.addCategories {
+    margin: 1.5rem 3rem;
+}
+
+.tweetCheckBox {
+    display: flex;
+}
+
+.loadbtn {
+    margin-bottom: 1rem;
+}
+
+.btn-select {
+    background: #a8dadc;
+    margin-bottom: .75rem;
+}
+.btn-clear {
+    background: #1d3557;
+    color: #f1faee;
+    margin-bottom: .75rem;
+}
+
+.home-header {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 3rem;
+}
+
+.search-header {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 2rem;
+}
+
+.select-all-group {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+.select-all-label {
+    margin-left: .75rem;
+}
+
+.category-card {
+    margin: .5rem
+}
+
+.tweet-category-header {
+    text-decoration: none;
+    color: #1d3557;
+}
+
+.tweet-category-header:hover {
+    text-decoration: none;
+    color: #e63946;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.remove {
+    display: none;
+}
+
+#success-msg{
+    display: flex;
+    justify-content: center;
+}
+
+#success-msg p {
+    display: inline-block;
+    padding: .75rem;
+    border: 1px solid green;
+    color: green;
+}

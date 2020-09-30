@@ -1,0 +1,28 @@
+{
+  "name": "test-twitter-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body": "^5.1.0",
+    "connect-mongodb-session": "^2.4.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.10.3",
+    "parser": "^0.1.4",
+    "passport": "^0.4.1",
+    "passport-twitter": "^1.0.4",
+    "twit": "^2.2.11"
+  }
+}

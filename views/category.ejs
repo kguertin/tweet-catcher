@@ -1,0 +1,21 @@
+<%- include('includes/head.ejs') %>
+<div class="top-container">
+    <%- include('includes/nav.ejs') %>
+</div>
+<div class="container">
+    <h1 class="header-home"><%= pageTitle %></h1>
+    <div class="delete-container">
+        <div class="select-all-group">
+            <input class="form-check-input select-all-check" name="select-all-check" id="select-all-tweets" type="checkbox">
+            <label class="form-check-label select-all-label" for="select-all-check">Select All</label>
+        </div>
+        <input type="hidden" id="category" value="<%= pageTitle %>">
+        <button class="form-control btn btn-main btn-remove-tweet">Remove</button>
+    </div>
+    <%- include('includes/construct-tweets.ejs') %>
+</div>
+<script sync src="https://platform.twitter.com/widgets.js"></script>
+<Script>
+let tweetIds = '<%= tweetIDs %>'
+</Script>
+<%- include('includes/foot.ejs') %>

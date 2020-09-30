@@ -1,0 +1,19 @@
+<div id="tweet-container" class="row row-cols-3">
+    <% initialTweets.forEach (tweet => { %>
+        <div class="col" id="<%= tweet %>">
+            <div class="tweet-card">
+                <div class="select-section">
+                    <div class="tweetCheckBox">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-inputb select-tweet" type="checkbox" value="<%= tweet %>">
+                            <label class="form-check-label select-all-label" for="inlineCheckbox1">Select</label>
+                          </div>
+                    </div>
+                </div>
+                <div class="tweet" tweetID="<%= tweet %>"></div>
+            </div>
+
+        </div>
+    <% }) %>
+</div>
+<button class="load-btn btn btn-main form-control" id="load-tweets-btn">Load more tweets</button>

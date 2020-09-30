@@ -1,0 +1,23 @@
+<%- include('includes/head.ejs') %>
+<%- include('includes/nav.ejs') %>
+    <% if(user) { %>
+        <div class="container">
+            <h1 class="home-header">Hello <%= user.username %></h1>
+            <p>Enter up to five hash tags seperated by commas to search for tweets with those hashtags.</p>
+            <form action="/search" method="POST">
+                <div class="form-group">
+                    <input class="form-control" name="hashtags" type="text" placeholder="Enter up to five hashtags.">
+                </div>
+                <button class="btn btn-main form-control" type="Submit">Search</button>
+            </form>
+            <div id="container"></div>
+        </div>
+    <% } else { %>
+        <div class="container login-container">
+            <h2 class="home-header">Tweet Collector</h2>
+            <div class="text-center">
+                <a class="btn btn-lg btn-main" href="/login/twitter">Sign in with Twitter</a> 
+            </div>
+        </div>
+    <% } %>
+<%- include('includes/foot.ejs') %>
