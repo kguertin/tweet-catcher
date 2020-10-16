@@ -15,8 +15,8 @@ const User = require('./models/user')
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user')
 
-const PORT = process.env.PORT;
-const MONGODB_URI = 'mongodb+srv://kevin:node1234@cluster0-kmmuu.mongodb.net/twitter-api';
+const PORT = process.env.PORT || 3000;
+const MONGODB_URI = `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASS}@cluster0-kmmuu.mongodb.net/twitter-api`;
 
 const store = new MongoDBStore({
   uri: MONGODB_URI,
