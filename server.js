@@ -26,7 +26,7 @@ const store = new MongoDBStore({
 passport.use(new Strategy({
     consumerKey: process.env.TWITTER_API_KEY,
     consumerSecret: process.env.TWITTER_API_SECRET,
-    callbackURL: 'http://127.0.0.1:5000/login/twitter/return'
+    callbackURL: 'https://tweet-catcher.herokuapp.com/login/twitter/return'
     },
     function(token, tokenSecret, profile, cb) {
       return cb(null, profile);
